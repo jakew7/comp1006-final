@@ -8,7 +8,7 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <!-- start of the body -->
-    <body style="background-color:brown;"> 
+    <body style="background-color:plum;"> 
 
 <!-- title and nav bar of page -->
 <?php
@@ -38,13 +38,13 @@ $cmd->execute();
 $user = $cmd->fetchAll();
 
 // echos the tablef rom bootstrap
-echo '<table class="table table-dark"><thead><th>User Name</th></thead>';
+echo '<table class="table table-dark"><thead><th>User Name</th><th></th></thead>';
 
-// foreach loop to grap the data 
+// foreach loop to grap the data  and adds a edit button
 foreach ($user as $u){
     echo '<tr>
     <td>' . $u['username'] . '</td>
-    </tr>';
+    <td><a href="user-details.php? class="btn btn-warning">Edit</a></td></tr>';
 }
 
 // echos the table
