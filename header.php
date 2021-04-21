@@ -21,6 +21,12 @@
                     <a class="nav-link" aria-current="page" href="games.php">Our Games</a>
                 </li>
             </ul>
+            <!-- adds users.php to navbar -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="users.php">Users</a>
+                </li>
+            </ul>
             <ul class="navbar-nav ms-auto">
                 <?php
                 // access current session 1st
